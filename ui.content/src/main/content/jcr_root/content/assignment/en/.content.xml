@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2020-01-24T08:49:00.195+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/assignment/settings/wcm/templates/home-page"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="English"
+        sling:resourceType="assignment/components/structure/home-page"
+        pageTitle="Landing Page"
+        rootPath="/content/assignment/en">
+        <root
+            jcr:lastModified="{Date}2020-01-24T03:44:53.521+05:30"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid"/>
+    </jcr:content>
+    <menu1/>
+    <menu2/>
+    <menu3/>
+</jcr:root>

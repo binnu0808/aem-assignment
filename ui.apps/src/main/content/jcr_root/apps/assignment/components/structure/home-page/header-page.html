@@ -1,0 +1,9 @@
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.css @ categories='assignment.base'}"/>
+<sly data-sly-test.resourceType="${pageProperties.sling:resourceType}"/>
+<sly data-sly-test.mode="${resourceType == 'assignment/components/structure/home-page' ? 'edit' : 'disabled'}"/>
+<sly data-sly-test.rootPath="${inheritedPageProperties.rootPath}"/>
+<sly data-sly-test.header="${rootPath}/jcr:content/header"/>
+<header>
+   <sly data-sly-resource="${ 'header' @ resourceType='assignment/components/content/header'}"></sly>
+</header>

@@ -1,0 +1,12 @@
+<!--/* Primary nav list */-->
+<div class="navbar">
+<a href="${pageProperties.rootPath @extension='html'}">Home</a>
+<sly class="subnav" data-sly-use.topnav="com.adobe.aem.assignment.core.components.SiteNavigation" data-sly-test="${topnav.pagelist}" data-sly-list="${topnav.pagelist}">
+	<div class="subnav">
+        <a class="subnavbtn" href="${item.path @extension='html'}">${item.title}</a>
+        <div class="subnav-content" data-sly-test="${item.childList}" data-sly-list="${item.childList}">
+            <a class="" href="${item.path @extension='html'}"> ${item.title} </a>
+        </div>
+    </div>
+</sly>
+</div>
